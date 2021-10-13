@@ -17,7 +17,7 @@ import './style.scss';
 
 export default function SideBar() {
   const handleSideBarClick = () => {
-    let sidebar = document.querySelector('.sidebar');
+    const sidebar = document.querySelector('.sidebar');
     sidebar.classList.toggle('active');
   };
 
@@ -29,7 +29,7 @@ export default function SideBar() {
             <MdOutlineSpaceDashboard className="react_icons" />
             <div className="logo_name">Dashboard</div>
           </div>
-          <GiHamburgerMenu className="" id="sidebar_btn"/>
+          <GiHamburgerMenu className="" id="sidebar_btn" />
         </div>
         <ul className="nav_list">
           <li className="nav_items search_link">

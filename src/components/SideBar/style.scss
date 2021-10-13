@@ -22,7 +22,7 @@ body {
   left: 78px;
   transition: all 0.5s ease;
   padding: 10px;
-  background-color: #1d1b31;
+  background-color: #aaa;
 }
 
 .sidebar {
@@ -31,6 +31,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   background: #11101d;
   padding: 6px 14px;
   transition: all 0.5s ease;
@@ -40,6 +41,8 @@ body {
     & .logo_content .logo {
       opacity: 1;
       pointer-events: none;
+      transition: 0.5s;
+
     }
 
     & #sidebar_btn {
@@ -50,6 +53,8 @@ body {
     }
     & .links_name {
       opacity: 1;
+      transition: 0.5s;
+
     }
     & input {
       width: 100%;
@@ -58,11 +63,30 @@ body {
       width: calc(100% - 240px);
       left: 240px;
     }
+    & #log_out {
+      left: 88%;
+    }
+    & .profile_details {
+      opacity: 1 !important;
+      transition: 0.8s !important;
+
+    }
+    & .profile_content {
+      padding: 0px 0px !important;
+      transition: 0.5s;
+    }
+    & .profile {
+      border-radius: 0px !important;
+      padding: 10px 10px !important;
+      transition: 0.5s;
+
+    }
   }
 }
 .links_name {
   opacity: 0;
   pointer-events: auto;
+  transition: 0.5s;
 }
 
 .react_icons {
@@ -77,6 +101,8 @@ body {
   height: 50px;
   width: 100%;
   align-items: center;
+  transition: 0.2s;
+
 }
 
 .logo_content .logo .logo_name {
@@ -184,17 +210,23 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
+    padding: 10px 10px;
+    transition: 0.5s;
 
     & .profile {
       position: relative;
       padding: 10px 6px;
       height: 60px;
       background: #1d1b31;
+      border-radius: 15px;
+      transition: 0.5s;
 
       & .profile_details {
         display: flex;
         align-items: center;
         font-weight: 700;
+        opacity: 0;
+        transition: 0.2s;
 
         & .name_job {
           margin-left: 10px;
@@ -215,7 +247,7 @@ body {
 
 #log_out {
   position: absolute;
-  left: 88%;
+  left: 50%;
   transform: translateX(-50%);
   min-width: 50px;
   bottom: 15px;
